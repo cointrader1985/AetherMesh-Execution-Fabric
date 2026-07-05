@@ -141,7 +141,11 @@ const validator = new KeyValidator("yek_terces");
 const network = new Network(nodes, validator);
 
 // Create engine
-const engine = new Executy contract", gasFee: 12, signature: "terces_yek" },
+const engine = new ExecutionEngine(network);
+
+// Sample transactions
+const transactions: Transaction[] = [
+    { id: 1, payload: "deploy contract", gasFee: 12, signature: "terces_yek" },
     { id: 2, payload: "update state root", gasFee: 7, signature: "invalid_key" },
     { id: 3, payload: "finalize batch", gasFee: 20, signature: "terces_yek" }
 ];
